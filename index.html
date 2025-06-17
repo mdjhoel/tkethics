@@ -1,236 +1,55 @@
-<!DOCTYPE html>
+<meta charset="UTF-8"> 
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TKethics</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</head>
-<style type="text/css">
-	.mycontainer {
-		margin: 10px;
-	}
+	<head>
+		<title>TKethics</title>
 
-	.card {
-		margin-bottom: 10px;
-	}
-</style>
-<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">
-      		<img src="data/tkethics.png" alt="TKethics" height="30">
-    	</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">Home</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">TechStack</a>
-	        </li>
-	       	<li class="nav-item">
-	          <a class="nav-link" href="#">Research</a>
-	        </li>
-	       	<li class="nav-item">
-	          <a class="nav-link" href="#events">Events</a>
-	        </li>
-	       	<li class="nav-item">
-	          <a class="nav-link" href="#">Incubator</a>
-	        </li>
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            More
-	          </a>
-	          <ul class="dropdown-menu">
-	            <li><a class="dropdown-item" href="#">Resources</a></li>
-	            <li><a class="dropdown-item" href="#">Partnerships</a></li>
-	            <li><a class="dropdown-item" href="#">Support us</a></li>
-	            <li><a class="dropdown-item" href="#">File share</a></li>
-	            <li><a class="dropdown-item" href="#">Members</a></li>
-	            <li><a class="dropdown-item" href="#">Book online</a></li>
-	          </ul>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link disabled" aria-disabled="true">Register</a>
-	        </li>
-	      </ul>
-	      <form class="d-flex" role="search">
-	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-	        <button class="btn btn-outline-success" type="submit">Search</button>
-	      </form>
-	    </div>
-	  </div>
-	</nav>
+		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-	<div class="mycontainer">
-		<div class="row">
-		  <div class="col-sm-12 col-md-12 col-lg-6">
-		    <div class="card text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 h-100">
-		      <div class="card-body" style='padding: 35px'>
-		        <p class="card-title" style="font-size: 80px;">TKethics</p>
-		        <p class="card-text" style="font-size: 25px">Blending technology and ethics to ignite a generation of leaders with expertise in cutting-edge technology and a powerful foundation of timeless humanistic values.</p>
-		        <a href="#started" class="btn btn-primary" style="margin-top: 10px;">Get Started</a>
-		      </div>
-		    </div>
-		  </div>
+		<script src="site.js"></script>
 
-		  <div class="col-sm-12 col-md-12 col-lg-6">
-		  	<div class="card border border-primary-subtle rounded-3 h-100 justify-content-center">
-		      	<img src="data/phone.png">
-		    </div>
-		  </div>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		</div>
+		<style type="text/css">
+			.card {
+				margin: 10px;
+			}
 
-	<div class='container'>
+			.mytitle {
+				font-size: 70px;
+			}
 
-	<br><br><br>
+			.mysubtitle {
+				font-size: 25px;
+			}
 
+			.bigcards {
+				margin-bottom: 5px;
+			}
 
-		<p class="card-title" style="font-size: 70px;" id="events">Events</p>
-		<p class="card-text" style="font-size: 20px">Take your understanding of AI and related ethical research topics to the next level by presenting or testing your powers of persuasion against other students.</p>
+			.keywords {
+				font-size: 20px;
+				padding: 2px;
+				text-align: center;
+			}
 
+		</style>
 
-	<div class="row">
+	</head>
 
-		<div class="col-lg-6 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/aiglobal.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">Global AI Debates</h5>
-			    <p class="card-text">Jul 01, 2025, 7:00 PM
-		        			Dec 07, 2025, 11:00 PM (Virtual Event)</p>
-			    <a href="#" class="btn btn-primary">Register</a>
-			  </div>
-			</div>
-		</div>	<br>
+	<body ng-app="parts">
 
-		<div class="col-lg-6 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/olympics.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">Ethics Olympics</h5>
-			    <p class="card-text">Jul 23, 2025, 9:30 AM - 3:00 PM EDT 
-			    (Virtual Event)</p>
-			    <a href="#" class="btn btn-primary">Register</a>
-			  </div>
-			</div>
-		</div>	<br>
+		<div ng-controller="PartsCtrl">
 
-	</div> <!-- end row -->
-
-		<div class="row">
-
-		<div class="col-lg-6 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/grandfinal.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">TKethics grand final</h5>
-			    <p class="card-text">Aug 29, 2025, 6:00 PM EDT – Aug 30, 2025, 12:15 AM EDT (Virtual Event)</p>
-			    <a href="#" class="btn btn-primary">Register</a>
-			  </div>
-			</div>
-		</div>
-
-		<div class="col-lg-6 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/fallinvite.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">2025 TKEthics Fall Invitational</h5>
-			    <p class="card-text">Nov 08, 2025, 6:00 PM – 11:45 PM EST
-(Virtual Event)</p>
-			    <a href="#" class="btn btn-primary">Register</a>
-			  </div>
-			</div>
-		</div>
-
-	</div> <!-- end row -->
-
-	<div class="row">
-
-		<div class="col-lg-6 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/panamerican.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">Pan American Ethics Olympiad</h5>
-			    <p class="card-text">Date and Location TBD</p>
-			    <a href="#" class="btn btn-primary">Details</a>
-			  </div>
-			</div>
-		</div>
-
-	</div> <!-- end row -->
-
-	<br><br><br>
-
-		<p class="card-title" style="font-size: 70px;">Get Started</p>
-		<p class="card-text" style="font-size: 20px">Level up! Learn to use AI software, apply it to a technology based research topic and then present or debate others in the ultimate boss battle and to become AI and future ready.</p>
-
-	<div class="row" id="started">
-
-		<div class="col-lg-4 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/aitech.jpg" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">AI TechStack</h5>
-			    <p class="card-text">Level 1: Learn the AI software you need to become an AI power user.</p>
-			    <a href="#" class="btn btn-primary">Register</a>
-			  </div>
-			</div>
-		</div>
-
-		<div class="col-lg-4 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/airesearch.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">AI Research</h5>
-			    <p class="card-text">Level 2: Research a topic to level up your conceptual and ethical understanding.</p>
-			    <a href="#" class="btn btn-primary">Register</a>
-			  </div>
-			</div>
-		</div>
-
-		<div class="col-lg-4 col-md-12">
-			<div class="card" >
-			  <img class="card-img-top" src="data/aidebate.png" alt="Card image cap">
-			  <div class="card-body">
-			    <h5 class="card-title">AI Debate</h5>
-			    <p class="card-text">Level 3: Attain boss level command by presenting or debating your topic.</p>
-			    <a href="#" class="btn btn-primary">Register</a>
-			  </div>
-			</div>
-		</div>
-
-	</div> <!-- end row -->
-
-
-</div> <!-- end container -->
-
+			<div ng-include="nav"></div>
+			
+				<div ng-include=main></div>
 	
-	<div class="container">
-		<footer class="py-3 my-4"> 
-			<ul class="nav justify-content-center border-bottom pb-3 mb-3">	
-				<li class="nav-item">
-					<a href="#" class="nav-link px-2 text-body-secondary">
-					Home
-					</a>
-			 	</li> 
-			 	<li class="nav-item">
-			 		<a href="#" class="nav-link px-2 text-body-secondary">About</a>
-			 	</li> 
-			 	<li class="nav-item">
-			 		<a href="#" class="nav-link px-2 text-body-secondary">My Account</a>
-			 	</li> 
-			 </ul> 
-			 <p class="text-center text-body-secondary">&copy; 2025 TKethics</p> 
-		</footer>
-	</div>
+			<div ng-include="footer"></div>
 
-</body>
+  		</div>  <!-- end ng-controller -->
+	</body>
 </html>
